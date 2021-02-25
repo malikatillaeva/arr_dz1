@@ -8,7 +8,10 @@ do{
         console.log(arr);
     }
     else if( a[0] == 'del'){
-        arr.splice(a[1], 1)
+        for(let i=0; i<arr.length; i++){
+            if(arr[i]==a[1])
+            arr.splice(i, 1)
+        }
         console.log(arr);
     }
 }while(a != "stop")
